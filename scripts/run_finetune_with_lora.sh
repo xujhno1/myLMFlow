@@ -19,7 +19,7 @@ mkdir -p ${output_dir} ${log_dir}
 
 deepspeed ${deepspeed_args} \
   examples/finetune.py \
-    --model_name_or_path facebook/galactica-1.3b \
+    --model_name_or_path decapoda-research/llama-7b-hf \
     --dataset_path ${dataset_path} \
     --output_dir ${output_dir} --overwrite_output_dir \
     --num_train_epochs 0.01 \

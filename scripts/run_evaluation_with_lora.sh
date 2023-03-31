@@ -6,7 +6,7 @@
 CUDA_VISIBLE_DEVICES=0 \
     deepspeed examples/evaluate.py \
     --answer_type text \
-    --model_name_or_path facebook/galactica-1.3b \
+    --model_name_or_path decapoda-research/llama-7b-hf \
     --lora_model_path output_models/finetune_with_lora \
     --dataset_path data/alpaca/test \
     --prompt_structure "Input: {input}" \
